@@ -14,7 +14,7 @@ export default function HeroSection() {
           </p>
           <button className="btn btn-primary">Get In Touch</button>
           <div className="hero--section-img">
-            <img src="./img/albero.png" alt="apicoltore al lavoro" />
+            <img src="./img/Herosection.jpg" alt="albero con prodotti" />
           </div>
         </div>
       </div>
