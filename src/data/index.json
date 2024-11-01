@@ -1,0 +1,35 @@
+{
+  "prodotti": [
+    {
+      "id": "1",
+      "src": "./img/icons8-miele-50.png",
+      "title": "Il nostro Miele",
+      "description": "Le nostre api laboriose raccolgono il nettare dei fiori per creare il nostro delizioso miele. Ogni goccia è una miscela unica di aromi e dolcezza. Il nostro impegno per l'apicoltura sostenibile si riflette nella purezza e nella qualità del nostro miele, da assaporare sulla vostra colazione o nei vostri piatti preferiti."
+    },
+    {
+      "id": "2",
+      "src": "./img/saffronIco.jpg",
+      "title": "Il nostro Zafferano",
+      "description": "I nostri fiori di zafferano sono coltivati con cura per offrire il meglio in termini di aroma, colore e sapore. La raccolta artigianale dei delicati stimmi di zafferano garantisce un prodotto di qualità superiore, perfetto per arricchire le vostre ricette speciali. Aggiungete il tocco di lusso del nostro zafferano ai vostri piatti e scoprite una nuova dimensione di sapore."
+    },
+
+    {
+      "id": "3",
+      "src": "./img/idro2ico.png",
+      "title": "Il nostro Idromele",
+      "description": "Le nostre bottiglie di idromele sono il risultato di un'arte antica, tramandata e perfezionata con cura. Prodotte utilizzando solo miele di altissima qualità e acqua pura, racchiudono i sapori della natura e la magia della fermentazione. Ogni bottiglia racconta il nostro impegno nel rispettare metodi tradizionali, che esaltano le caratteristiche uniche del miele e danno vita a un idromele dal gusto armonioso e avvolgente."
+    },
+    {
+      "id": "4",
+      "src": "./img/icons8-bar-50.png",
+      "title": "Il nostro vino",
+      "description": "Il nostro vino nasce dall'amore per la terra e dall'unione di tradizione e innovazione. Ogni bottiglia riflette una lavorazione artigianale attenta, con uve selezionate a mano e processi sostenibili che esaltano i sapori autentici del nostro territorio."
+    },
+    {
+      "id": "5",
+      "src": "./img/propolis.png",
+      "title": "La nostra Propoli",
+      "description": "Ricca di antiossidanti, vitamine e minerali, la nostra propoli è ideale per sostenere il benessere naturale del corpo, rinforzando le difese immunitarie e lenendo piccoli disturbi stagionali. Utilizziamo solo ingredienti selezionati e rispettosi dell'ambiente, per un prodotto efficace e sicuro, pensato per chi cerca un rimedio genuino."
+    }
+  ]
+}

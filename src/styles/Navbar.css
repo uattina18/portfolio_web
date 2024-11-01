@@ -43,7 +43,7 @@
 @media (max-width: 768px) {
   .menu {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     background-color: #282c34;
     top: 60px;

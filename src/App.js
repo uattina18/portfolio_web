@@ -1,11 +1,8 @@
+import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
 import Navbar from "./Pages/Home/Navbar";
-import HeroSection from "./Pages/Home/HeroSection";
-import Products from "./Pages/Home/Products";
-import About from "./Pages/Home/About";
-import Contacts from "./Pages/Home/ContactMe";
+import Home from "./Pages/Home/Homescreen";
 
 function App() {
   return (
@@ -14,11 +11,8 @@ function App() {
         <div>
           <Navbar />
           <Routes>
-            <Route path="/" element={<HeroSection />} />
-            <Route path="about" element={<About />} />
-            <Route path="products" element={<Products />} />
-            <Route path="contacts" element={<Contacts />} />
-            <Route path="*" element={<div>404 Not Found</div>} />
+            <Route path="/" element={<Home />}></Route>
+            <Route path="*" element={<div>404 Not Found</div>}></Route>
           </Routes>
         </div>
       </Router>

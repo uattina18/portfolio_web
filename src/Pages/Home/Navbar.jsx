@@ -35,67 +35,93 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="../assets/AnticaFonte" alt="LogoAF"></img>
+        <img src="./img/AnticaFonte.png" alt="LogoAF" className="" />
       </div>
-      <button
+      <a
+        href="/*"
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
-      </button>
+      </a>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
           <li>
             <Link
               onClick={closeMenu}
-              activeClass="navBar--active-content"
+              activeClass="navbar--active-content"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-              to="Home"
+              to="HeroSection"
               className="navbar--content"
             >
               Home
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Products"
+              className="navbar--content"
+            >
+              Products
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="About"
+              className="navbar--content"
+            >
+              About Me
             </Link>
           </li>
           <li>
             <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"
-            ></Link>
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Gallery"
+              className="navbar--content"
+            >
+              Vetrina
+            </Link>
           </li>
         </ul>
       </div>
+      <Link
+        onClick={closeMenu}
+        activeClass="navbar--active-content"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="ContactMe"
+        className="btn btn-outline-primary"
+      >
+        Contact Me
+      </Link>
     </nav>
   );
 }
 
-//   return (
-//     <div className="container">
-//       <nav>
-//         <div className="logo">
-//           <h2>L'antica fonte</h2>
-//         </div>
-
-//         <ul>
-//           <li>
-//             <a href="/">Home</a>
-//           </li>
-//           <li>
-//             <a href="/about">About</a>
-//           </li>
-//           <li>
-//             <a href="/products">Products</a>
-//           </li>
-//           <li>
-//             <a href="/contacts">Contacts</a>
-//           </li>
-//         </ul>
-//       </nav>
-//     </div>
-//   );
-// }
 export default Navbar;
