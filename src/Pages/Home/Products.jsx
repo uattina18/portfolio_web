@@ -1,4 +1,5 @@
 import data from "../../data/index.json";
+import { Link } from "react-router-dom";
 
 export default function Products() {
   return (
@@ -10,11 +11,15 @@ export default function Products() {
       <div className="products--section--container">
         {data?.prodotti?.map((item, index) => (
           <div key={index} className="products--section--card">
+            <h3 className="products--section--title">
+              <Link id="my--link--element--id" className="my-link-element">
+                {item.title}
+              </Link>
+            </h3>
             <div className="products--section--img">
               <img src={item.src} alt="Product Chain" />
             </div>
             <div className="products--section--card--content">
-              <h3 className="products--section--title">{item.title}</h3>
               <p className="products--section--description">
                 {item.description}
               </p>

@@ -2,34 +2,37 @@
   "prodotti": [
     {
       "id": "1",
-      "src": "./img/icons8-miele-50.png",
+      "src": "./img/barattoli-miele.jpg",
       "title": "Il nostro Miele",
-      "description": "Le nostre api laboriose raccolgono il nettare dei fiori per creare il nostro delizioso miele. Ogni goccia è una miscela unica di aromi e dolcezza. Il nostro impegno per l'apicoltura sostenibile si riflette nella purezza e nella qualità del nostro miele, da assaporare sulla vostra colazione o nei vostri piatti preferiti."
+      "description": "Da noi puoi trovare una selezione di mieli naturali, tra cui il miele di acacia, il miele di castagno e il miele millefiori. Ogni varietà offre un gusto unico: il miele di acacia è delicato e chiaro, ideale per addolcire senza alterare i sapori; il miele di castagno è intenso e leggermente amaro, perfetto per chi cerca un gusto deciso; e il miele millefiori, con il suo sapore complesso e armonioso, varia in base ai fiori della stagione, risultando adatto a molteplici usi. Scopri il nostro miele per un dolce che esalta la natura."
     },
     {
       "id": "2",
-      "src": "./img/saffronIco.jpg",
+      "src": "./img/zafferanoApe.jpg",
       "title": "Il nostro Zafferano",
       "description": "I nostri fiori di zafferano sono coltivati con cura per offrire il meglio in termini di aroma, colore e sapore. La raccolta artigianale dei delicati stimmi di zafferano garantisce un prodotto di qualità superiore, perfetto per arricchire le vostre ricette speciali. Aggiungete il tocco di lusso del nostro zafferano ai vostri piatti e scoprite una nuova dimensione di sapore."
     },
 
     {
       "id": "3",
-      "src": "./img/idro2ico.png",
+      "src": "./img/Idromele.jpg",
       "title": "Il nostro Idromele",
-      "description": "Le nostre bottiglie di idromele sono il risultato di un'arte antica, tramandata e perfezionata con cura. Prodotte utilizzando solo miele di altissima qualità e acqua pura, racchiudono i sapori della natura e la magia della fermentazione. Ogni bottiglia racconta il nostro impegno nel rispettare metodi tradizionali, che esaltano le caratteristiche uniche del miele e danno vita a un idromele dal gusto armonioso e avvolgente."
+      "description": "Le nostre bottiglie di idromele sono il risultato di un'arte antica, tramandata e perfezionata con cura. Prodotte utilizzando solo miele di altissima qualità e acqua pura, racchiudono i sapori della natura e la magia della fermentazione. Ogni bottiglia racconta il nostro impegno nel rispettare metodi tradizionali, che esaltano le caratteristiche uniche del miele e danno vita a un idromele dal gusto armonioso e avvolgente.",
+      "content": "Da noi puoi trovare idromele artigianale prodotto con miele di alta qualità, tra cui il miele di acacia, castagno e millefiori. Il nostro idromele è una bevanda antica e raffinata, dal sapore unico e aromatico che varia a seconda del tipo di miele utilizzato. Realizzato con tecniche tradizionali, è ideale da gustare da solo o in abbinamento a formaggi, carni e dolci. Scopri il nostro idromele per un viaggio nei sapori autentici e naturali del nostro miele."
     },
     {
       "id": "4",
-      "src": "./img/icons8-bar-50.png",
+      "src": "./img/vino.jpg",
       "title": "Il nostro vino",
-      "description": "Il nostro vino nasce dall'amore per la terra e dall'unione di tradizione e innovazione. Ogni bottiglia riflette una lavorazione artigianale attenta, con uve selezionate a mano e processi sostenibili che esaltano i sapori autentici del nostro territorio."
+      "description": "Il nostro vino nasce dall'amore per la terra e dall'unione di tradizione e innovazione. Ogni bottiglia riflette una lavorazione artigianale attenta, con uve selezionate a mano e processi sostenibili che esaltano i sapori autentici del nostro territorio.",
+      "content": "Da noi puoi trovare una selezione di vini di alta qualità, disponibili nelle varietà bianco, rosé e rosso. Il nostro vino bianco è fresco e fruttato, perfetto per aperitivi e piatti di pesce; il rosé è delicato e floreale, ideale per accompagnare salumi, formaggi freschi e antipasti; mentre il rosso è corposo e ricco di sfumature, adatto a piatti di carne e formaggi stagionati. Ogni bottiglia racchiude i sapori e i profumi autentici del nostro territorio, per un’esperienza di gusto unica."
     },
     {
       "id": "5",
-      "src": "./img/propolis.png",
+      "src": "./img/Propoli.jpg",
       "title": "La nostra Propoli",
-      "description": "Ricca di antiossidanti, vitamine e minerali, la nostra propoli è ideale per sostenere il benessere naturale del corpo, rinforzando le difese immunitarie e lenendo piccoli disturbi stagionali. Utilizziamo solo ingredienti selezionati e rispettosi dell'ambiente, per un prodotto efficace e sicuro, pensato per chi cerca un rimedio genuino."
+      "description": "Ricca di antiossidanti, vitamine e minerali, la nostra propoli è ideale per sostenere il benessere naturale del corpo, rinforzando le difese immunitarie e lenendo piccoli disturbi stagionali. Utilizziamo solo ingredienti selezionati e rispettosi dell'ambiente, per un prodotto efficace e sicuro, pensato per chi cerca un rimedio genuino.",
+      "content": "Da noi puoi trovare propoli naturale, raccolta con cura per garantire la massima qualità e purezza. La nostra propoli è apprezzata per le sue proprietà benefiche, conosciuta per le qualità antibatteriche, antinfiammatorie e lenitive. È ideale per sostenere il sistema immunitario e per alleviare i fastidi della gola e delle vie respiratorie, soprattutto nei periodi più freddi. Scopri la nostra propoli per un rimedio naturale che sfrutta al meglio i doni dell'alveare."
     }
   ]
 }
