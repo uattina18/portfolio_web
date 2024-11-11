@@ -14,7 +14,7 @@ const index = () => {
       <HeroSection />
       <About />
       <Products />
-
+      <Navbar />
       <Vetrina />
     </div>
   );

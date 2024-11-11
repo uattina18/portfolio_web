@@ -156,6 +156,13 @@ p {
 }
 .navbar--items ul > li > a {
   text-decoration: none;
+  text-align: center;
+  justify-content: space-between;
+  padding: 56px;
+  font-size: 45px;
+}
+.navbar--items ul > li > a:hover {
+  color: var(--white-color);
 }
 /* Navbar Content */
 .navbar--content {
@@ -212,6 +219,7 @@ p {
   font-weight: 700;
   line-height: 77px;
   font-family: "Crimson Text", serif;
+  padding-bottom: 85px;
 }
 .products--section--container {
   display: grid;
@@ -219,6 +227,7 @@ p {
   align-items: flex-start;
   gap: 42.6px;
   grid-template-columns: repeat(4, 1fr);
+  padding-top: 15px;
 }
 .products--section--card {
   display: flex;
