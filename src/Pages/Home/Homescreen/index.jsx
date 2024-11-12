@@ -16,6 +16,7 @@ const index = () => {
       <Products />
       <Navbar />
       <Vetrina />
+      <Contacts />
     </div>
   );
 };
