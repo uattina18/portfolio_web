@@ -4,32 +4,28 @@ import { Link } from "react-scroll";
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
 
+  // Funzione per attivare/disattivare il menu
   const toggleNav = () => {
     setNavActive(!navActive);
   };
 
+  // Funzione per chiudere il menu
   const closeMenu = () => {
     setNavActive(false);
   };
 
+  // Effetto per chiudere il menu su resize a larghezza <= 1200px
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 500) {
+      if (window.innerWidth <= 1200) {
         closeMenu();
       }
     };
 
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
-
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu();
-    }
   }, []);
 
   return (
@@ -37,15 +33,18 @@ function Navbar() {
       <div>
         <img src="./img/AnticaFonte.png" alt="LogoAF" className="" />
       </div>
-      <a
-        href="/*"
+
+      {/* Hamburger Menu */}
+      <div
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
-      </a>
+      </div>
+
+      {/* Menu items */}
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
           <li>
@@ -77,6 +76,7 @@ function Navbar() {
               About Me
             </Link>
           </li>
+
           <li>
             <Link
               onClick={closeMenu}
@@ -91,6 +91,7 @@ function Navbar() {
               Products
             </Link>
           </li>
+
           <li>
             <Link
               onClick={closeMenu}
@@ -103,6 +104,20 @@ function Navbar() {
               className="navbar--content"
             >
               Vetrina
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="ContactMe"
+              className="navbar--content"
+            >
+              Contact Me
             </Link>
           </li>
         </ul>
