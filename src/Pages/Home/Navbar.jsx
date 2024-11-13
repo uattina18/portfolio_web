@@ -33,7 +33,12 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/AnticaFonte.png" alt="LogoAF" className="" />
+        <img
+          src="./img/AnticaFonte.png"
+          alt="LogoAF"
+          className="logoAf"
+          hspace="-50"
+        />
       </div>
 
       {/* Hamburger Menu */}
