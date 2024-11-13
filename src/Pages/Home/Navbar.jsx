@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -122,18 +124,26 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="ContactMe"
-        className="btn btn-outline-primary"
-      >
-        Contact Me
-      </Link>
+      <div className="social-icons">
+        <a
+          href="https://www.facebook.com/tuoProfilo" // Sostituisci con il link al tuo profilo Facebook
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          onClick={closeMenu}
+        >
+          <FontAwesomeIcon icon={faFacebook} size="lg" />
+        </a>
+        <a
+          href="https://www.instagram.com/tuoProfilo" // Sostituisci con il link al tuo profilo Instagram
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          onClick={closeMenu}
+        >
+          <FontAwesomeIcon icon={faInstagram} size="lg" />
+        </a>
+      </div>
     </nav>
   );
 }

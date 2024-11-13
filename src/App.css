@@ -147,6 +147,21 @@ p {
   right: 0;
   z-index: 100;
 }
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #333;
+  transition: color 0.3s ease;
+  font-size: 2rem;
+}
+
+.social-icon:hover {
+  color: var(--title-color);
+  transform: scale(1.1);
+}
 .navbar--items > ul {
   list-style: none;
   display: flex;
@@ -338,6 +353,54 @@ p {
   margin-top: 56px;
 }
 /*About style ends*/
+/*Gallery starts */
+.gallery--section {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 85px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery--section--heading {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--sixth-color);
+  font-family: "Crimson Text", serif;
+  margin-bottom: 40px;
+  line-height: 70px;
+}
+
+.gallery--section--container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+}
+
+.gallery--section--card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery--section--card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery--section--card:hover {
+  transform: scale(1.05);
+}
+/*Gallery ends */
 /*Contact start */
 .contact--section {
   display: flex;
@@ -455,18 +518,38 @@ input[type="checkbox"] {
 
 /*Responsive screens */
 @media only screen and (max-width: 1800px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .hero--section--title {
     font-size: 68px;
     line-height: 70px;
   }
   .about--section--title {
-    font-size: 28px;
+    font-size: 58px;
     line-height: 40px;
+  }
+  .product--section--heading {
+    font-size: 64px;
+    line-height: 77px;
+    color: var(--sixth-color);
+    font-family: "Crimson", serif;
   }
 }
 @media only screen and (max-width: 1600px) {
+  .product--section--heading {
+    font-size: 64px;
+    line-height: 77px;
+    color: var(--sixth-color);
+    font-family: "Crimson", serif;
+  }
+  .gallery--section--container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .products--section--heading {
-    font-size: 54px;
+    font-size: 64px;
     line-height: 70px;
   }
   .products--section--container {
@@ -488,6 +571,9 @@ input[type="checkbox"] {
   }
 }
 @media only screen and(max-width:1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+  }
   .btn-outline-primary {
     display: flex;
   }
@@ -615,10 +701,16 @@ input[type="checkbox"] {
   padding-bottom: 0;
 }
 .hero--section--title,
-.products--section--heading,
+.product--section--heading,
 .sections--heading {
   font-size: 25px;
   line-height: 40px;
+}
+.product--section--heading {
+  font-size: 64px;
+  line-height: 77px;
+  color: var(--sixth-color);
+  font-family: "Crimson", serif;
 }
 
 /*Hamburger Menu */

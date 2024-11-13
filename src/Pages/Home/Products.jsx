@@ -6,7 +6,7 @@ export default function Products() {
     <section className="products--section" id="Products">
       <div className="products--container">
         <p className="products--section--subtitle">Prodotti</p>
-        <h2 className="products--section--heading">Le nostre Specialità</h2>
+        <h2 className="product--section--heading">Le nostre Specialità</h2>
       </div>
       <div className="products--section--container">
         {data?.prodotti?.map((item, index) => (
