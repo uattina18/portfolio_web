@@ -80,7 +80,7 @@ function Navbar() {
               to="About"
               className="navbar--content"
             >
-              About Me
+              About
             </Link>
           </li>
 
@@ -124,7 +124,7 @@ function Navbar() {
               to="ContactMe"
               className="navbar--content"
             >
-              Contact Me
+              ContactMe
             </Link>
           </li>
         </ul>

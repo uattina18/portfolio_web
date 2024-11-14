@@ -165,7 +165,7 @@ p {
 .navbar--items > ul {
   list-style: none;
   display: flex;
-  align-items: ;
+  align-items: center;
   gap: 42.667px;
   text-decoration: none;
 }
@@ -545,7 +545,10 @@ input[type="checkbox"] {
   .gallery--section--container {
     grid-template-columns: repeat(3, 1fr);
   }
-
+  .navbar--items ul li a {
+    font-size: 90%;
+    align-items: center;
+  }
   .products--section--heading {
     font-size: 64px;
     line-height: 70px;
@@ -604,7 +607,7 @@ input[type="checkbox"] {
   .hero--section--title,
   .products--section--heading,
   .sections--heading {
-    font-size: 80%; /* Ridimensionamento specifico dei titoli principali */
+    font-size: 90%; /* Ridimensionamento specifico dei titoli principali */
     text-align: center;
   }
   .navbar--items ul li a {
