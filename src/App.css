@@ -208,7 +208,6 @@ p {
   font-size: 72px;
   font-weight: 700;
   margin-top: 45px;
-
   justify-content: center;
 }
 
@@ -525,10 +524,6 @@ input[type="checkbox"] {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .hero--section--title {
-    font-size: 68px;
-    line-height: 70px;
-  }
   .about--section--title {
     font-size: 58px;
     line-height: 40px;
@@ -609,7 +604,7 @@ input[type="checkbox"] {
   .hero--section--title,
   .products--section--heading,
   .sections--heading {
-    font-size: 30px; /* Ridimensionamento specifico dei titoli principali */
+    font-size: 80%; /* Ridimensionamento specifico dei titoli principali */
     text-align: center;
   }
   .navbar--items ul li a {
@@ -703,7 +698,7 @@ input[type="checkbox"] {
   padding-top: 0;
   padding-bottom: 0;
 }
-.hero--section--title,
+
 .product--section--heading,
 .sections--heading {
   font-size: 25px;
