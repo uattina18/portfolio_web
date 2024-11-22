@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
+      <div className="navbar--logo">
         <img
           src="./img/AnticaFonte.png"
           alt="LogoAF"

@@ -18,7 +18,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="HeroSection"
-                className="text-md"
+                className="f--item"
               >
                 Home
               </Link>
@@ -32,7 +32,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="About"
-                className="text-md"
+                className="f--item"
               >
                 About Me
               </Link>
@@ -45,7 +45,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Products"
-                className="text-md"
+                className="f--item"
               >
                 Products
               </Link>
@@ -58,7 +58,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Gallery"
-                className="text-md"
+                className="f--item"
               >
                 Vetrina
               </Link>
@@ -71,7 +71,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="ContactMe"
-                className="text-md"
+                className="last-f--item"
               >
                 Contact Me
               </Link>
