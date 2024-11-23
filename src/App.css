@@ -66,6 +66,7 @@ p {
   text-decoration: none;
   border-radius: 40px;
   transition: background-color 0.5s;
+  margin: 1rem;
 }
 
 /* Stile di base per la NAVBAR */
@@ -215,6 +216,158 @@ p {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
 }
+/*========================fine About dispositivi piccoli====================*/
+/*========================Prodotti piccoli dispositivi======================*/
+.products--section {
+  padding: 1rem;
+}
+.products--section--subtitle {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  color: var(--sections-color);
+  font-size: 3rem;
+}
+.products--section--container {
+  display: flex;
+  flex-direction: column;
+}
+.product--section--heading {
+  display: flex;
+  font-family: "Dancing Script", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 1rem;
+  justify-content: center;
+}
+.products--section--container {
+  background-color: var(--body-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.products--section--title {
+  color: var(--title-color);
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.products--section--card {
+  flex: 1 1 calc(33.333% -40px);
+  max-width: calc(33.333%-40px);
+  box-sizing: border-box;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products--section--img {
+  width: 100%;
+  max-width: 300px;
+}
+.products--section--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.products--section--description {
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem;
+}
+/*Fine prodotti disp piccoli*/
+/*Gallery Mobile*/
+.vetrina-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+}
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.vetrina-heading {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  color: var(--sections-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.vetrina--subtitle {
+  display: flex;
+  font-family: "Dancing script", sans-serif;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+/*contact form */
+.contact--section {
+  padding: 1.5rem;
+}
+.contact--form--container {
+  background-color: var(--body-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.contact--section--heading {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  color: var(--title-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.contact--section--subtitle {
+  display: flex;
+  font-family: "Dancing Script", serif;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.text-ig {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.contact--label {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-style: oblique;
+  margin: 1rem;
+  gap: 1rem;
+}
+.contact--input {
+  border: 1px solid var(--sections-color);
+  display: flex;
+  align-items: flex-end;
+  justify-items: end;
+  right: 0;
+  width: 100%;
+}
+textarea.contact--input {
+  width: 100%;
+}
+.text-sm {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
 /*========================Media Queries==================*/
 /*dispositivi medi */
 
@@ -224,6 +377,9 @@ p {
     top: 0;
     position: relative;
     display: flex;
+    justify-self: center;
+    right: 0;
+    width: 100%;
   }
   .logoAf {
     width: 6rem;
@@ -248,6 +404,16 @@ p {
   /*hEROSECTION medi*/
   .hero--section--title {
     font-size: 2rem;
+  }
+  .hero--img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    display: inline-block;
+    overflow: hidden;
+    left: 0;
+    margin: 0;
   }
 
   /*about Medi */
@@ -276,21 +442,73 @@ p {
   .about--section--container {
     max-width: 100%;
   }
+
+  /*PRODUCTS SECTION dispositivi medi*/
+  .products--section--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products--section--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .products--section--img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  /*gallery dispositivi medi */
+  .vetrina-section {
+    display: flex;
+    max-width: 800px;
+    padding: 30px;
+  }
+  .carousel-container {
+    display: flex;
+    width: 90%;
+    background-color: var(--body-color);
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  .carousel-image {
+    max-height: 800px;
+  }
+  .vetrina-heading {
+    font-size: 3.5rem;
+    justify-content: flex-start;
+  }
+  .vetrina--subtitle {
+    font-size: 2.7rem;
+    justify-content: center;
+  }
+  .contact--label {
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .navbar {
+    display: flex;
     background-color: var(--links-color);
+    width: 100%;
+    padding: 4rem;
+    box-sizing: border-box;
   }
   .navbar--logo {
     display: flex;
   }
   .logoAf {
-    width: 6.7rem;
+    width: 9rem;
   }
   .navbar--items > ul > li > a {
-    font-size: 1.4rem;
+    font-size: 3rem;
     font-weight: 600;
+    justify-content: center;
+    gap: 3rem;
   }
   .social-icons {
     font-size: 2rem;
@@ -300,9 +518,15 @@ p {
   }
   /*Herosection dispositivi grandi */
   .hero--img {
-    width: 100%;
-    height: auto;
+    height: 25vw;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    box-sizing: border-box;
+    left: 0;
   }
+
+  /*About section dispositivi grandi */
   .about--section--content {
     display: flex;
     flex-direction: column;
@@ -311,12 +535,12 @@ p {
   .about--section--content--box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
   }
   .about--section--img {
     flex: 1;
-    max-width: 45%;
+    max-width: 50%;
     height: auto;
     box-sizing: border-box;
   }
@@ -326,8 +550,43 @@ p {
     box-sizing: border-box;
   }
 
-  .about--section--img,
-  .about--section--container {
+  .about--section--img .about--section--container {
     max-width: 90%;
+  }
+  /*Vetrina schermi grandi */
+  .vetrina--section {
+    max-width: 1200px;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .carousel-image {
+    max-height: 600px;
+  }
+
+  .vetrina--subtitle,
+  .product--section--heading,
+  .contact--section--subtitle {
+    font-size: 3rem;
+  }
+  .contact--section--heading,
+  .about--section--heading,
+  .products--section--subtitle,
+  .vetrina-heading {
+    font-size: 4rem;
+  }
+  .contact--section--subtitle,
+  .vetrina--subtitle,
+  .product--section--heading {
+    display: flex;
+    justify-content: left;
   }
 }

@@ -2,17 +2,19 @@ export default function ContactMe() {
   return (
     <section id="ContactMe" className="contact--section">
       <div>
-        <p className="sub--title">Get in touch</p>
         <h2 className="contact--section--heading">Contact Me</h2>
+        <p className="contact--section--subtitle">Get in touch</p>
+
         <p className="text-ig">
-          Siamo qui per rispondere a tutte le tue domande! Ti risponderemo il
-          prima possibile!
+          Siamo qui per rispondere a tutte le tue domande!
+          <br />
+          Ti risponderemo il prima possibile!
         </p>
       </div>
       <form className="contact--form--container">
         <div className="container">
           <label htmlFor="first-name" className="contact--label">
-            <span className="text-md">First Name</span>
+            <span className="text-md">First Name:</span>
             <input
               type="text"
               className="contact--input text-md"
@@ -22,7 +24,7 @@ export default function ContactMe() {
             />
           </label>
           <label htmlFor="last-name" className="contact--label">
-            <span className="text-md">Last Name</span>
+            <span className="text-md">Last Name:</span>
             <input
               type="text"
               className="contact--input text-md"
@@ -32,7 +34,7 @@ export default function ContactMe() {
             />
           </label>
           <label htmlFor="email" className="contact--label">
-            <span className="text-md">Email</span>
+            <span className="text-md">Email:</span>
             <input
               type="email"
               className="contact--input text-md"
@@ -42,7 +44,7 @@ export default function ContactMe() {
             />
           </label>
           <label htmlFor="phone-number" className="contact--label">
-            <span className="text-md">Phone number</span>
+            <span className="text-md">Phone number:</span>
             <input
               type="number"
               className="contact--input text-md"
@@ -52,17 +54,9 @@ export default function ContactMe() {
             />
           </label>
         </div>
-        <label htmlFor="choose-topic" className="contact--label">
-          <span className="text-md">Choose a topic</span>
-          <select id="choose-topic" className="contact--input text-md">
-            <option>select one....</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
-          </select>
-        </label>
+
         <label htmlFor="message" className="contact--label">
-          <span className="text-md">Message</span>
+          <span className="text-md">Message:</span>
           <textarea
             className="contact--input text--md"
             id="message"
