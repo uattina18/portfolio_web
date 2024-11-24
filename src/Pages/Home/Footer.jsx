@@ -6,7 +6,11 @@ function Footer() {
     <footer className="footer-container">
       <div className="footer--link--container">
         <div>
-          <img src="./img/AnticaFonte.png" alt="logoAF" />
+          <img
+            src="./img/AnticaFonte.png"
+            alt="logoAF"
+            className="footer--logo"
+          />
         </div>
         <div className="footer--items">
           <ul>
@@ -79,7 +83,6 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <hr className="divider" />
     </footer>
   );
 }

@@ -367,6 +367,38 @@ textarea.contact--input {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
 }
+/*Contact End*/
+/*Footer*/
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--text-color-light);
+  justify-content: flex-start;
+}
+.footer--logo {
+  width: 4rem;
+  display: flex;
+  margin: 0.5rem;
+  justify-content: left;
+  border-radius: 5px;
+}
+.footer--link--container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.footer--items > ul {
+  list-style: none;
+  font-family: "Crimson Text", serif;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.6rem;
+  font-style: italic;
+}
 
 /*========================Media Queries==================*/
 /*dispositivi medi */
@@ -488,6 +520,24 @@ textarea.contact--input {
     font-size: 1.5rem;
     gap: 3rem;
   }
+  /*footer medi */
+  .footer-container {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    justify-self: center;
+    position: relative;
+  }
+  .footer--link--container {
+    display: flex;
+    justify-items: center;
+  }
+  .footer--items > ul {
+    font-size: 1.2rem;
+    gap: 3rem;
+    margin-left: 8rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -588,5 +638,15 @@ textarea.contact--input {
   .product--section--heading {
     display: flex;
     justify-content: left;
+  }
+  /*footer dispositivi grandi*/
+  .footer--logo {
+    width: 5rem;
+    display: flex;
+    padding: 0.5rem;
+  }
+  .footer--items > ul {
+    font-size: 2rem;
+    text-decoration: underline;
   }
 }
