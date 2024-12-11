@@ -14,7 +14,7 @@ export default function Vetrina() {
     { id: 7, src: "./img/Gallery/uva2.jpg", alt: "Image 7" },
   ];
   return (
-    <section className="vetrina-section">
+    <section id="Gallery" className="vetrina-section">
       <h2 className="vetrina-heading">Gallery</h2>
       <p className="vetrina--subtitle">La nostra gallery</p>
       <div className="carousel-container">
