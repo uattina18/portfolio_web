@@ -57,7 +57,7 @@ p {
   font-family: "Dancing script";
   display: flex;
   padding: 32px 40px;
-  font-size: 45px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -324,10 +324,30 @@ p {
   padding: 1.5rem;
 }
 .contact--form--container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   background-color: var(--body-color);
   padding: 1rem;
   border-radius: 5px;
+  box-sizing: border-box;
 }
+.contact--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.message--label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-column: span 2;
+}
+
 .contact--section--heading {
   display: flex;
   justify-content: flex-start;
@@ -351,21 +371,35 @@ p {
 }
 .contact--label {
   display: flex;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
   font-style: oblique;
   margin: 1rem;
   gap: 1rem;
+
+  grid-column: span 2;
 }
 .contact--input {
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid var(--sections-color);
+  border-radius: 4px;
   display: flex;
   align-items: flex-end;
-  justify-items: end;
-  right: 0;
-  width: 100%;
+  justify-content: end;
+  padding: 0.75rem;
+  font-size: 1rem;
 }
+.contact--form--btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--black-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 textarea.contact--input {
-  width: 100%;
+  resize: vertical;
 }
 .text-sm {
   font-family: "Montserrat", sans-serif;
@@ -560,7 +594,7 @@ textarea.contact--input {
     width: 9rem;
   }
   .navbar--items > ul > li > a {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 600;
     justify-content: center;
     gap: 3rem;

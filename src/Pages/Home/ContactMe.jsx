@@ -12,7 +12,7 @@ export default function ContactMe() {
         </p>
       </div>
       <form className="contact--form--container">
-        <div className="container">
+        <div className="contact--grid">
           <label htmlFor="first-name" className="contact--label">
             <span className="text-md">First Name:</span>
             <input
